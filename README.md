@@ -3,7 +3,7 @@
 BABEL,
 ESLINT,
 WEBPACK,
-SCSS ENTEGRATED.
+SCSS INTEGRATED.
 
 linkedIn: https://www.linkedin.com/in/yagizyildirim/
 github: https://github.com/yagizyldrm
