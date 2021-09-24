@@ -1,0 +1,105 @@
+$background-color : rgb(255, 182, 45) ;
+$line-color: rgb(107, 42, 42);
+$font-color: white;
+$shadow-color:rgba(0,0,0,0.9);
+
+// Entire Screen
+body {
+    background-color: $background-color;
+    font-size: 12px;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Header Area
+header{
+    display: flex;
+    justify-content: center;
+    border-bottom: 3px solid $line-color;
+    .title{
+        color: $line-color;
+    }
+}
+
+//Animals Card Area
+.animalCardsArea-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.animalCard-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    margin: 20px 200px;
+    height: 500px;
+}
+.animalCard{  
+    width: 100%;
+    text-align: center;
+    border: 1px solid $line-color;
+    box-shadow: 5px 5px 3px $line-color;
+    opacity: 0.4;
+    background-color: $background-color;
+    transition: 0.5s;
+    &:hover{
+        background-color: $line-color;
+        opacity: 1;
+        box-shadow: 10px 20px 3px $line-color;   
+    }  
+}
+.animalImage{
+    width: 100%;  
+    img{
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+.cardInfo{
+    text-align: center;
+    margin-top: 5px;
+    border-top: 1px solid black;
+    position: relative;
+   .animalName{
+      font-size: 40px;
+   }
+   .animalAge{
+       position: absolute;
+       top:-5px;
+       right: 5px;
+       font-size: 80px;
+   }
+}
+
+
+
+
+
+// Footer Area
+.footer-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 3px solid $line-color;
+    padding: 10px;
+
+    .footer-container{
+        flex-direction: row;
+        display: flex;
+    }
+    p{
+        font-size: 1rem;
+        align-items: baseline;
+        color: $line-color;
+        margin: 0px;
+    }
+    img {
+        height: 15px;
+        width: 15px;
+        margin-left: 3px;
+        margin-top: 2px;
+    }
+}
